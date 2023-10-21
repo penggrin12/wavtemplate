@@ -21,6 +21,7 @@ async def try_edit(message: types.Message, text: str):
 
 # https://github.com/williexu/random_username
 def generate_username(user_id: typing.Optional[int] = None):
+    """Not really random, so this is not anonymous."""
     random.seed(user_id)
 
     directory_path = os.path.dirname(__file__)
